@@ -140,7 +140,6 @@ public class JanelaPrincipal extends JFrame {
             public void valueChanged(ListSelectionEvent e) {
                 Mesa mesa = lstMesas.getSelectedValue();
                 if (mesa != null) {
-                    System.out.println(mesa);
                     lstPedido.setModel(new PedidoListModel(mesa.getPedido()));
                     tabelaP.setText("Tabela de Pedidos da '" + mesa.getCodigo() + "'");
                     if (mesa.getEstado() == 0) {
