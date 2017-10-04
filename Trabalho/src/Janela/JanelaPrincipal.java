@@ -12,6 +12,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import javax.swing.Box;
@@ -206,7 +207,7 @@ public class JanelaPrincipal extends JFrame {
         btnFecharPedido.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Date hora = new Date();
+                Date hora= new Date();
                 lstMesas.getSelectedValue().setEstado(2);
                 lstMesas.getSelectedValue().setFechado(
                         String.valueOf(hora.getHours())
@@ -368,5 +369,7 @@ public class JanelaPrincipal extends JFrame {
             combobox.addItem(itens.get(i));
         }
     }
+    
+    
 
 }

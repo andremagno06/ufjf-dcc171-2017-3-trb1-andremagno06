@@ -70,12 +70,12 @@ public class Mesa {
     public String toString() {
         
         if(estado==0){
-            return  ""+this.codigo;
+            return  ""+this.codigo+"  |  Disponivel";
         }else if(estado==1){
-            return ""+this.codigo+" |   Aberto: "+aberto;
+            return ""+this.codigo+"  |   Aberto: "+aberto;
          
         }else if(estado==2){
-            return ""+this.codigo+" |   Aberto: "+aberto+" |  Fechado: "+fechado;
+            return ""+this.codigo+"  |   Aberto: "+aberto+" |  Fechado: "+fechado;
         }
         return codigo;
     }
