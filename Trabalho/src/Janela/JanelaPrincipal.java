@@ -168,7 +168,7 @@ public class JanelaPrincipal extends JFrame {
         btnCriarMesa.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String cod = JOptionPane.showInputDialog("Nome da nova Mesa:");
+                String cod = JOptionPane.showInputDialog("Nome da nova Mesa: ");
                 if (cod != null && !cod.isEmpty()) {
                     Mesa t = new Mesa(cod);
                     mesas.add(t);
